@@ -1,0 +1,23 @@
+<mat-slider min="0" max="100000" step="1000" showTickMarks discrete [(ngModel)]="value" [displayWith]="formatLabel">
+    <input matSliderThumb>
+  </mat-slider>
+  
+  <div>
+    {{value}}
+  </div>
+ 
+ <div id="box">
+ 
+ 
+ </div>
+ 
+ 
+ <style>
+ 
+ 
+    #box {
+        background-color: '{{box}}';    
+        height: 100px;
+    }
+ </style>
+ 
