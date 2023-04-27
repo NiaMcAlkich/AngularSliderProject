@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatSliderModule } from '@angular/material/slider';
 
 @Component({
  selector: 'app-slidecomp',
@@ -8,6 +9,17 @@ import { Component } from '@angular/core';
 export class SlideComponent {
  box = 'box';
  value = 0;
+
+ slide(value: number) {
+  if (value >= 500) {
+    this.box = 'white';
+  } 
+  
+  else {
+    this.box = 'black';
+  }
+}
+
 
 
  formatLabel(value: number): string {
